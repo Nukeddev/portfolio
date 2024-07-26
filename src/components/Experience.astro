@@ -1,0 +1,38 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Freelancer",
+    company: "Nukedev",
+    description:
+      "Actualmente trabajo como Freelance, ayudando a clientes con sus proyectos de Desarrollo Web o complementos basados en Java.",
+  },
+  {
+    date: "Enero 2023 - Mayo 2024",
+    title: "Developer",
+    company: "Narwell",
+    description:
+      "Encargado del Desarrollo y Optimización del servidor, así también como la creación de nuevos complementos y sus mejoras.",
+  },
+  {
+    date: "Junio 2024 - Actualidad",
+    title: "Webmaster",
+    company: "IEEE CIS Unisimon",
+    description:
+      "Encargado de la página web de la rama estudiantil IEEE CIS Unisimon, así tambien como la optimizacion de la misma, publicaciones de eventos, noticias y demás.",
+    link: "https://cis.ieee.org/",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
