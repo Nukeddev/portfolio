@@ -1,79 +1,44 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import Badge from "../components/Badge.astro";
-import SectionContainer from "../components/SectionContainer.astro";
-import LinkedInIcon from "../components/icons/LinkedIn.astro";
-import GitHubIcon from "../components/icons/GitHub.astro";
-import MailIcon from "../components/icons/Mail.astro";
-import SocialPill from "../components/SocialPill.astro";
-import Experience from "../components/Experience.astro";
+
+import AboutMe from "../components/AboutMe.astro";
 import Briefcase from "../components/icons/Briefcase.astro";
 import CodeIcon from "../components/icons/Code.astro";
+import Experience from "../components/Experience.astro";
+import ProfileCheck from "../components/icons/ProfileCheck.astro";
 import Projects from "../components/Projects.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <Layout
-  title="Portfolio de Nukedev | Java & Web Developer "
-  description="Contrata a Nukedev para crear tu pagína web personal o empresarial."
+  title="Porfolio de midudev - Desarrollador y Programador Web con 15 años de experiencia"
+  description="Contrata a midudev para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas."
 >
   <main class="px-4">
-    <SectionContainer class="py-44 pb-32">
-      <img
-        class="rounded-full size-32 mb-4"
-        src="https://github.com/Nukeddev/Nukeddev/assets/109694252/776140b3-047f-416e-94c0-5b6d5f11d509"
-        alt="Nukedev photo"
-      />
-      <h1
-        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
-      >
-        Hey, soy Nukedev <a
-          href="https://www.linkedin.com/in/nukedev"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-center items-center"
-        >
-          <Badge>Disponible para trabajar</Badge>
-        </a>
-      </h1>
-      <h2 class="text-xl lg:text-2xl text-pretty max-w-[700px]">
-        <span class="text-green-200">Java and Web Developer</span>. Estudiante
-        de Ingeniería de Sistemas de Colombia. Apasionado por la <span
-          class="text-green-200"
-          >tecnología
-        </span>y el <span class="text-green-200">desarrollo</span> en general.
-      </h2>
-
-      <nav class="flex gap-4 mt-4 flex-wrap">
-        <SocialPill href="https://www.linkedin.com/in/nukedev">
-          <LinkedInIcon class="size-4 md:size-6" />
-          LinkedIn
-        </SocialPill>
-        <SocialPill href="https://www.github.com/nukeddev">
-          <GitHubIcon class="size-4 md:size-6" />
-          GitHub
-        </SocialPill>
-        <SocialPill href="mailto:spulidolozano@gmail.com">
-          <MailIcon class="size-4 md:size-6" />
-          spulidolozano@gmail.com
-        </SocialPill>
-      </nav>
+    <SectionContainer class="py-16 md:py-36">
+      <Hero />
     </SectionContainer>
-
+  </main>
+  <div class="space-y-24">
     <SectionContainer id="experiencia">
-      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-        <Briefcase class="size-7" />
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <Briefcase class="size-8" />
         Experiencia
       </h2>
       <Experience />
     </SectionContainer>
 
     <SectionContainer id="proyectos">
-      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
         <CodeIcon class="size-7" />
         Proyectos
       </h2>
       <Projects />
     </SectionContainer>
-  </main>
+  </div>
 </Layout>
