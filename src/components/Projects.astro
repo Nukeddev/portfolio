@@ -5,6 +5,8 @@ import Tailwind from "./icons/Tailwind.astro";
 import LinkButton from "./LinkButton.astro";
 import Html from "./icons/Html.astro";
 import Java from "./icons/Java.astro";
+import NextJS from "./icons/NextJS.astro";
+import JavaScript from "./icons/JavaScript.astro";
 
 const TAGS = {
   TAILWIND: {
@@ -22,23 +24,33 @@ const TAGS = {
     class: "bg-[#454545] text-white",
     icon: Java,
   },
+  NEXTJS: {
+    name: "NextJS",
+    class: "bg-[#000000] text-white",
+    icon: NextJS,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#F7DF1E] text-black",
+    icon: JavaScript,
+  }
 };
 const PROJECTS = [
   {
-    title: "Nukedev Portfolio - Java & Web Developer",
+    title: "Nukedev Portfolio - Web Developer",
     description:
       "Portfolio personal de Nukedev, aquí encontrarás información sobre mi experiencia, proyectos y habilidades. Creado desde cero con Tailwind CSS y HTML.",
     github: "https://github.com/Nukeddev/portfolio-dev",
-    image: "./projects/portfolio.png",
+    image: "./projects/portfolio.webp",
     tags: [TAGS.TAILWIND, TAGS.HTML],
   },
   {
-    title: "UtilityPlugin - Plugin de Minecraft",
+    title: "HacktoberFest - Caribe Dev",
     description:
-      "Plugin de Minecraft que añade comandos útiles para jugadores y equipo administrativo. Creado con Java y Spigot API.",
-    github: "https://github.com/Nukeddev/UtilityPlugin",
-    image: "./projects/utilityplugin.png",
-    tags: [TAGS.JAVA],
+      "Página oficial de Hacktoberfest para Caribedev, implementando un diseño intuitivo y moderno que destacaba eventos, proyectos y contribuciones de código abierto.",
+    github: "https://github.com/Caribe-Dev/caribe-page",
+    image: "./projects/hacktoberfest.webp",
+    tags: [TAGS.NEXTJS, TAGS.JAVASCRIPT, TAGS.TAILWIND],
   },
 ];
 ---
