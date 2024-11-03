@@ -33,7 +33,7 @@ const TAGS = {
     name: "JavaScript",
     class: "bg-[#F7DF1E] text-black",
     icon: JavaScript,
-  }
+  },
 };
 const PROJECTS = [
   {
@@ -48,6 +48,7 @@ const PROJECTS = [
     title: "HacktoberFest - Caribe Dev",
     description:
       "Página oficial de Hacktoberfest para Caribedev, implementando un diseño intuitivo y moderno que destacaba eventos, proyectos y contribuciones de código abierto.",
+    link: "https://caribedev.org/hacktoberfest2024/index.html",
     github: "https://github.com/Caribe-Dev/caribe-page",
     image: "./projects/hacktoberfest.webp",
     tags: [TAGS.NEXTJS, TAGS.JAVASCRIPT, TAGS.TAILWIND],
@@ -57,7 +58,7 @@ const PROJECTS = [
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, github }) => (
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
       <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
         <div class="w-full md:w-1/2">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
@@ -98,12 +99,12 @@ const PROJECTS = [
                   Code
                 </LinkButton>
               )}
-              <!-- {link && (
+              {link && (
                 <LinkButton href={link}>
                   <Link class="size-4" />
                   Preview
                 </LinkButton>
-              )} -->
+              )}
             </footer>
           </div>
         </div>
