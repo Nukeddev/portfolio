@@ -1,7 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import "@fontsource/onest";
+
 interface Props {
 	title: string;
 	description: string;
@@ -10,7 +10,11 @@ interface Props {
 const { description, title } = Astro.props;
 ---
 
-<!doctype html>
+<link
+	href="https://fonts.googleapis.com/css2?family=Onest:wdth,wght@75..100,100..900&display=swap"
+	rel="stylesheet"
+/>
+
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
